@@ -1,0 +1,78 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.page{
+    height: 100vh;
+    background-color: rgb(218, 192, 159);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px auto 162px;
+    grid-template-areas:
+     "nav nav nav nav nav nav nav nav nav nav "
+     "sec sec sec sec sec sec sec sec sec sec "
+     "foot foot foot foot foot foot foot foot foot foot ";
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(165 127 78);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section{
+    grid-area: sec;
+}
+footer{
+    grid-area: foot;
+    background-color:rgb(165 127 78) ;
+}
+ul{
+    list-style: none;
+    
+}
+ul li{
+    display: inline-block;
+    margin: 87px;
+}
+ul li a{
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+form{
+    text-align: center;
+}
+form input.user{
+    border-radius: 5cap;
+}
+form input.pass{
+    border-radius: 5cap;
+}
+form input.email{
+    border-radius: 5cap;
+}
+input:hover{
+    border-color: red;
+    overflow: hidden;
+}
+section div.form{
+   margin:10px 15px;
+}
+section  div.img1{
+    margin: 0px 10px;
+}
+section  div.img2{
+    margin: -314px 1248px;
+    padding-bottom: 68px
+}
+.right{
+    margin: -162px 1376px
+}
+.imf{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+}
